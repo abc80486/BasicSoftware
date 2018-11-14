@@ -1,0 +1,221 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>效果流畅动感基于jquery库的JS特效下拉菜单</title>
+	    <link href="css/smartmenu.css" type="text/css" rel="stylesheet" />
+        <link type="text/css" rel="stylesheet" href="css/shCore.css"/>
+        <link type="text/css" rel="stylesheet" href="css/shThemeDefault.css"/>
+        <script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+        <script type="text/javascript" src="js/smartmenu-min.js"></script>
+        <script type="text/javascript" src="js/shCore.js"></script>
+        <script type="text/javascript" src="js/shBrushJScript.js"></script>
+        <script type="text/javascript" src="js/shBrushXml.js"></script>
+	    <script type="text/javascript">
+            jQuery(window).ready(function(){
+                jQuery("#navigation").Smartmenu({animationDuration: 350});
+            });
+            SyntaxHighlighter.all();
+	    </script>
+	    
+	    <style type="text/css">
+	       body {
+	           background : #333;
+	       }
+	       
+	       #wrap {
+               margin : 50px auto 0px auto;
+	           width : 750px;
+	       }
+	       
+	       #description {
+	           margin-top: 80px;
+	       }
+	       
+	       #description ul {
+	           margin: 0px;
+	           padding: 0px;
+	           list-style: none;
+	       }
+
+           h2 {
+               font-family: helvetica, arial;
+               font-size: 15pt;
+               color: #888;
+           }
+
+	       pre {
+	           font-size: 8pt;
+	       }
+	    </style>
+    </head>
+    <body>
+        <div id="wrap">
+            <div id="navigation" class="smartmenu">
+                <ul>
+                    <li>
+                        <a href="http://www.mobanwang.com/">JavaScript</a>
+                        <ul>
+                            <li>
+                                <a href="http://www.mobanwang.com/">Navigation</a>
+                            </li>                
+                            <li>
+                                <a href="http://www.mobanwang.com/">Shopping Carts</a>
+                            </li>                
+                            <li>
+                                <a href="http://www.mobanwang.com/">Forms</a>
+                            </li>                
+                            <li>
+                                <a href="http://www.mobanwang.com/">News Tickers</a>
+                            </li>                
+                            <li>
+                                <a href="http://www.mobanwang.com/">Ratings and Charts</a>
+                            </li>                
+                            <li>
+                                <a href="http://www.mobanwang.com/">Media</a>
+                            </li>                
+                        </ul>
+                    </li>                
+                    <li>
+                        <a href="http://www.mobanwang.com/">Wordpress</a>
+                        <ul>
+                            <li>
+                                <a href="http://www.mobanwang.com/">Blog &amp; Magazines</a>
+                            </li>                
+                            <li>
+                                <a href="http://www.mobanwang.com/">Creative</a>
+                            </li>                
+                            <li>
+                                <a href="http://www.mobanwang.com/">Corporate</a>
+                            </li>                
+                            <li>
+                                <a href="http://www.mobanwang.com/">Retail</a>
+                            </li>                
+                        </ul>
+                    </li>                
+                    <li>
+                        <a href="">Site Template</a>
+                        <ul>
+                            <li>
+                                <a href="http://www.mobanwang.com/">Creative</a>
+                            </li>                
+                            <li>
+                                <a href="http://www.mobanwang.com/">Technology</a>
+                            </li>                
+                        </ul>
+                    </li>                
+                    <li>
+                        <a href="">PSD Templates</a>
+                        <ul>
+                            <li>
+                                <a href="http://www.mobanwang.com/">Nonprofit</a>
+                            </li>                
+                            <li>
+                                <a href="http://www.mobanwang.com/">Entertainment</a>
+                            </li>                
+                            <li>
+                                <a href="http://www.mobanwang.com/">Personal</a>
+                            </li>                
+                            <li>
+                                <a href="http://www.mobanwang.com/">Miscellaneous</a>
+                            </li>                
+                        </ul>
+                    </li>                
+                    <li>
+                        <a href="">Video</a>
+                    </li>                
+                    <li>
+                        <a href="">PHP Scripts</a>
+                        <ul>
+                            <li>
+                                <a href="http://www.mobanwang.com/">Project Management Tools</a>
+                            </li>                
+                            <li>
+                                <a href="http://www.mobanwang.com/">Image &amp; Media</a>
+                            </li>                
+                            <li>
+                                <a href="http://www.mobanwang.com/">Uploaders</a>
+                            </li>                
+                            <li>
+                                <a href="http://www.mobanwang.com/">Calendars</a>
+                            </li>                
+                        </ul>
+                    </li>                
+                </ul>
+            </div>
+            <div id="description">
+                <ul>
+                    <li>
+                        <h2>All the JavaScript you need to write</h2>
+                        <pre class="brush: javascript;">
+                            $(window).ready(function(){
+                                jQuery("#navigation").Smartmenu();
+                            });
+                        </pre>
+                    </li>
+                    <li>
+                        <h2>All the HTML you need</h2>
+                        <pre class="brush: xml">
+                            &lt;div id="navigation" class="smartmenu"&gt;
+                                &lt;ul&gt;
+                                    &lt;li&gt;
+                                        &lt;a href=""&gt;JavaScript&lt;/a&gt;
+                                        &lt;ul&gt;
+                                            &lt;li&gt;
+                                                &lt;a href=""&gt;Navigation&lt;/a&gt;
+                                            &lt;/li&gt;                
+                                            &lt;li&gt;
+                                                &lt;a href=""&gt;Shopping Carts&lt;/a&gt;
+                                            &lt;/li&gt;                
+                                            &lt;li&gt;
+                                                &lt;a href=""&gt;Forms&lt;/a&gt;
+                                            &lt;/li&gt;                
+                                            &lt;li&gt;
+                                                &lt;a href=""&gt;News Tickers&lt;/a&gt;
+                                            &lt;/li&gt;                
+                                            &lt;li&gt;
+                                                &lt;a href=""&gt;Ratings and Charts&lt;/a&gt;
+                                            &lt;/li&gt;                
+                                            &lt;li&gt;
+                                                &lt;a href=""&gt;Media&lt;/a&gt;
+                                            &lt;/li&gt;                
+                                        &lt;/ul&gt;
+                                    &lt;/li&gt;                
+                                    &lt;li&gt;
+                                        &lt;a href=""&gt;Wordpress&lt;/a&gt;
+                                        &lt;ul&gt;
+                                            &lt;li&gt;
+                                                &lt;a href=""&gt;Blog &amp; Magazines&lt;/a&gt;
+                                            &lt;/li&gt;                
+                                            &lt;li&gt;
+                                                &lt;a href=""&gt;Creative&lt;/a&gt;
+                                            &lt;/li&gt;                
+                                            &lt;li&gt;
+                                                &lt;a href=""&gt;Corporate&lt;/a&gt;
+                                            &lt;/li&gt;                
+                                            &lt;li&gt;
+                                                &lt;a href=""&gt;Retail&lt;/a&gt;
+                                            &lt;/li&gt;                
+                                        &lt;/ul&gt;
+                                    &lt;/li&gt;                
+                                    &lt;li&gt;
+                                        &lt;a href=""&gt;Site Template&lt;/a&gt;
+                                        &lt;ul&gt;
+                                            &lt;li&gt;
+                                                &lt;a href=""&gt;Creative&lt;/a&gt;
+                                            &lt;/li&gt;                
+                                            &lt;li&gt;
+                                                &lt;a href=""&gt;Technology&lt;/a&gt;
+                                            &lt;/li&gt;                
+                                        &lt;/ul&gt;
+                                    &lt;/li&gt;                
+                                &lt;/ul&gt;
+                            &lt;/div&gt;
+                        </pre>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+</body>
+</html>
