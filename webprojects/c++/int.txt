@@ -1,0 +1,10 @@
+9
+grd.bit.edu.cn 1 研究生教育
+www.bit.edu.cn/gbrcpy/gbsyjxsfzx/ 0 实验教学示范中心
+abroad.bit.edu.cn/ 1 本科生国际交流
+isc.bit.edu.cn/ 1 留学生教育
+www.hotcbit.org/ 1  高职教育
+sice.bit.edu.cn/ 1 国际教育
+sce.bit.edu.cn/sce/ 1 继续教育
+learn.bit.edu.cn/ 1 远程教育
+www.bitqfx.com 1 民族预科教育
