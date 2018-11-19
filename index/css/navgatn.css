@@ -1,0 +1,34 @@
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input{margin:0;padding:0;}
+body{font-size:12px; font-family: verdana,Microsoft YaHei,Tahoma,sans-serif;}
+img{border:none;}
+li{list-style:none;}
+input,select,textarea{outline:none;}
+textarea{resize:none;}
+a{text-decoration:none;}
+
+/*�帡��*/
+.clearfix:after{content:"";display:block;clear:both;}
+.clearfix{zoom:1;}
+
+.fl{ float:left;}
+.fr{ float:right;}
+
+/*nav*/
+.bg{ background:#333; width:100%;  height:20px; height: 55px;position: fixed; _position: absolute;}
+.nav{ font-size:14px; width: 1220px;   margin:0 auto; }
+.nav h2{ overflow: hidden;position: relative; margin-right: 20px;padding: 0 20px 0 0;}
+.nav ul.w3cnav>li{ display:inline; overflow: hidden; position: relative;}
+.nav ul.w3cnav>li>a{padding: 0 15px; display:inline-block; color:#DDD; line-height:55px;  height: 55px;   text-align:center;}
+.nav ul.w3cnav li.nvmore{ cursor:pointer; padding: 0 25px 0 15px; display:inline-block; color:#DDD; line-height:55px;  height: 55px; text-align:center; background:url(http://www.w3cfuns.com/resource/images/extend/hdbg.png) no-repeat 49px 27px; position:relative; overflow:visible;}
+.nav ul.w3cnav li.nvmore.hover{color:#333; border-left:1px solid #333; border-right:1px solid #333; background:#fff url(http://www.w3cfuns.com/resource/images/extend/hdbg.png) no-repeat -35px 27px;}
+
+.nav li.nvmore ul.sl{ position: absolute;top: 46px;left: -1px;width: 200px;border: 1px solid #333;background: #fff;z-index: 2;border-top-width: 0; display:none;}
+.nav li.nvmore ul.sl li{ height:30px; width:50px; line-height:30px; text-align:center; font-size:12px;}
+.nav li.nvmore ul.sl li a{ color:#333;}
+.nav li.nvmore ul.sl li a:hover{ color:#05A;text-decoration: underline;}
+
+.nav ul.w3cnav i{ background:url(http://www.w3cfuns.com/resource/images/extend/hdbg.png) no-repeat 0 -42px; position:absolute; left:50%; bottom:-9px;margin-left:-7px;width: 12px;height: 6px; font-style: normal; font-size:0; }
+.nav ul.w3cnav .active i{bottom:0px;}
+
+.nav ul.cl li{ font-size:12px;}
+.nav ul.cl li a{ display:inline-block; color:#DDD; line-height:55px;  height: 55px; padding: 0 8px; }
