@@ -156,10 +156,13 @@
                 <input name="collID" value="1" type="hidden"/>
                 <input name="maxresults" size="4" value="10" type="hidden"/>
                 <input class="notext" value="站内搜索" name="query" type="text" id="query"
-                    onfocus="if(value==defaultValue){value='';}" onblur="if(!value){value=defaultValue;}"/>
-                <input />
+                    onfocus="if(value==defaultValue){value='';}" 
+                    onblur="if(!value){value=defaultValue;}"
+                    onclick="if(this.value==''){this.value='';this.form.query.style.color='#3c98cc'}"
+                    />
+                <input class="notxt1" name="Submit" type="submit" value=""/>
             </form>
-        </div>
+        </div>  
     </body>
 
 </html>

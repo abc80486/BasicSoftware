@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>学习记录网站</title>
+<link rel="stylesheet" type="text/css" href="css/navgatn.css">
+<link rel="stylesheet" type="text/css" href="css/imgshow.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/navgasn.js"></script>
+<script src="js/slider.js"></script>
+</head>
+
+<body>
+<div class="bg">
+        <div class="nav clearfix">
+            <h2 class="fl"><a href="#"><img src="images/002.jpg" /></a></h2>
+        <ul class="fl w3cnav">
+            <li class="fl active"><a href="#">首页</a><i></i></li>
+            <li class="fl"><a href="#">网页</a><i></i></li>
+            <li class="fl"><a href="#">移动设备页面</a><i></i></li>
+            <li class="fl"><a href="#">数据库</a><i></i></li>
+            <li class="fl"><a href="#">数据结构</a><i></i></li>
+            <li class="fl"><a href="#">算法</a><i></i></li>
+            <li class="fl"><a href="#">图论</a><i></i></li>
+            <li class="fl"><a href="#">数学相关</a><i></i></li>
+            <li class="fl"><a href="#">游戏相关</a><i></i></li>
+            <li class="fl nvmore">更多<em></em>
+                     <ul class="sl">
+                             <!--
+                    <li class="fl"><a href="#">����</a></li>
+                    <li class="fl"><a href="#">����</a></li>
+                    <li class="fl"><a href="#">����</a></li>
+                    <li class="fl"><a href="#">΢�ʼ�</a></li>
+                    <li class="fl"><a href="#">��Ƶ</a></li>
+                    <li class="fl"><a href="#">�㲥</a></li>
+                    <li class="fl"><a href="#">����</a></li>
+                    <li class="fl"><a href="#">����</a></li>
+                    <li class="fl"><a href="#">����</a></li>
+                    <li class="fl"><a href="#">������</a></li>
+                    <li class="fl"><a href="#">����</a></li>
+                             -->
+                        </ul>
+            </li>
+        </ul>
+        
+        </div>
+</div>
+<br><br><br><br>
+<div id="banner_tabs" class="flexslider">
+                <ul class="slides">
+                        <li>
+                                <a title="" target="_blank" href="http://www.baidu.com/">
+                                        <img width="1920" height="482" alt="" style="background: url(images/banner1.jpg) no-repeat center;" src="images/alpha.png">
+                                </a>
+                        </li>
+                        <li>
+                                <a title="" href="#">
+                                        <img width="1920" height="482" alt="" style="background: url(images/banner2.jpg) no-repeat center;" src="images/alpha.png">
+                                </a>
+                        </li>
+                        <li>
+                                <a title="" href="#">
+                                        <img width="1920" height="482" alt="" style="background: url(images/banner3.jpg) no-repeat center;" src="images/alpha.png">
+                                </a>
+                        </li>
+                </ul>
+                <ul class="flex-direction-nav">
+                        <li><a class="flex-prev" href="javascript:;">Previous</a></li>
+                        <li><a class="flex-next" href="javascript:;">Next</a></li>
+                </ul>
+                <ol id="bannerCtrl" class="flex-control-nav flex-control-paging">
+                        <li><a>1</a></li>
+                        <li><a>2</a></li>
+                        <li><a>2</a></li>
+                </ol>
+</div>
+<script type="text/javascript">
+        $(function() {
+                var bannerSlider = new Slider($('#banner_tabs'), {
+                        time: 5000,
+                        delay: 400,
+                        event: 'hover',
+                        auto: true,
+                        mode: 'fade',
+                        controller: $('#bannerCtrl'),
+                        activeControllerCls: 'active'
+                });
+                $('#banner_tabs .flex-prev').click(function() {
+                        bannerSlider.prev()
+                });
+                $('#banner_tabs .flex-next').click(function() {
+                        bannerSlider.next()
+                });
+        })
+</script>
+</body>
+</html>
